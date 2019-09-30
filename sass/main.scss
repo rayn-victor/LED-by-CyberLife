@@ -1,0 +1,8 @@
+@import "_vars";
+
+body {
+    color: $main-color;
+    background-color: $body-bg; 
+}
+
+@import "modules/_footer"
