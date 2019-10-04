@@ -1,8 +1,10 @@
-@import "_vars";
-
-body {
-    color: $main-color;
-    background-color: $body-bg; 
+main {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
 }
 
-@import "modules/_footer"
+h1 {
+    color: red;
+    font-size: 80px;
+}
