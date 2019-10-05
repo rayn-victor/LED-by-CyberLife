@@ -162,9 +162,37 @@ h1 {
 
 .imgs1 img:last-child {
     width: 420px;
-    transform: translateY(-460px) translateX(38px);
 }
 
 .ring2, .ring3, .ring4 {
     display: none;
+}
+
+.ring1 {
+    position: relative;
+}
+
+.ring1, .ring2, .ring3, .ring4 {
+    animation: 20s ease infinite rotateRings;
+}
+
+@-webkit-keyframes rotateRings {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(140deg); }
+    40% { transform: rotate(270deg); }
+    60% { transform: rotate(90deg); }
+    80% { transform: rotate(0deg); }
+    100% {  transform: rotate(360deg); }
+}
+
+.ring1v2 {
+    animation: 30s ease infinite rotateRingsv2;
+    position: absolute;
+    margin-left: -460px;
+    margin-top: 38px;
+}
+
+@-webkit-keyframes rotateRingsv2 {
+    0% { transform: rotate(0deg); }
+    100% {  transform: rotate(-360deg); }
 }
