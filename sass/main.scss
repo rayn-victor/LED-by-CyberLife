@@ -15,22 +15,22 @@ h1 {
 
 .mainCon {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 .buttonCon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    margin: 40px -60px 40px 60px;
 }
 
 .buttonCon img {
     height: 50px;
     width: 50px;
-    margin: 20px 0 20px 0;
+    margin: 40px;
     transition: 1s;
+    padding: 0 40px 0 40px;
 }
 
 .buttonCon img:hover {
@@ -47,7 +47,7 @@ h1 {
     border-radius: 20px;
     padding: 30px;
     color: #EFEFF0;
-    font-size: 20px;
+    font-size: 14px;
     font-family: Andale Mono, sans-serif;
     line-height: 35px;
 }
@@ -75,7 +75,7 @@ a {
 
 main {
     width: 95%;
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
     margin-bottom: 60px;
 }
@@ -97,8 +97,8 @@ h1 {
 
 .mainCon {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .imageCon {
@@ -113,9 +113,9 @@ h1 {
 
 .buttonCon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    margin: 40px -60px 40px 60px;
+    margin: 40px 40px 40px 40px;
 }
 
 .buttonCon img {
@@ -173,7 +173,7 @@ h1 {
 }
 
 .ring1, .ring2, .ring3, .ring4 {
-    animation: 20s ease infinite rotateRings;
+    -webkit-animation: 20s ease infinite rotateRings;
 }
 
 @-webkit-keyframes rotateRings {
@@ -186,7 +186,7 @@ h1 {
 }
 
 .ring1v2 {
-    animation: 30s ease infinite rotateRingsv2;
+    -webkit-animation: 30s ease infinite rotateRingsv2;
     position: absolute;
     margin-left: -460px;
     margin-top: 38px;
@@ -195,4 +195,78 @@ h1 {
 @-webkit-keyframes rotateRingsv2 {
     0% { transform: rotate(0deg); }
     100% {  transform: rotate(-360deg); }
+}
+
+.textbox1 {
+    background-color: #EFEFF0;
+    height: 20px;
+    width: 3px;
+    -webkit-animation: typeBlock 1s infinite linear;
+}
+
+.textbox2, .textbox3, .textbox4 {
+    display: none;
+}
+
+.on {
+    display: block;
+}
+
+.off {
+    display: none;
+}
+
+.blip1 {
+    background-color: #EFEFF0;
+    height: 20px;
+    width: 3px;
+    margin-left: 135px;
+    margin-top: -28px;
+    -webkit-animation: typeBlock 1s infinite linear;
+}
+
+.blip2 {
+    background-color: #EFEFF0;
+    height: 20px;
+    width: 3px;
+    margin-left: 290px;
+    margin-top: -28px;
+    -webkit-animation: typeBlock 1s infinite linear;
+}
+
+.blip3 {
+    background-color: #EFEFF0;
+    height: 20px;
+    width: 3px;
+    margin-left: 352px;
+    margin-top: -28px;
+    -webkit-animation: typeBlock 1s infinite linear;
+}
+
+@-webkit-keyframes typeBlock {
+    0% {-webkit-filter: opacity(0%); }
+    50% { -webkit-filter: opacity(100%); }
+    100% {-webkit-filter: opacity(0%); }
+}
+
+@media only screen and (min-width: 768px) {
+    .mainCon {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .buttonCon {
+        display: flex;
+        flex-direction: column;
+        margin: 40px -60px 40px 60px;
+    }
+
+    main {
+        text-align: left;
+    }
+
+    .textCon {
+        font-size: 20px;
+    }
 }
