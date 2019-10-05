@@ -1,4 +1,5 @@
 (() => {
+    
     console.log('ready to go...');
 
     let buttonBlue     = document.querySelector('.buttonBlue');
@@ -49,5 +50,4 @@
         buttonBlue.addEventListener('click', blueDesc);
         buttonYellow.addEventListener('click', yellowDesc);
         buttonRed.addEventListener('click', redDesc);
-
 })()
