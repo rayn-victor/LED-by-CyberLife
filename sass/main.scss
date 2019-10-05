@@ -155,3 +155,16 @@ h1 {
 .off {
     display: none;
 }
+
+.imgs1 {
+    height: 500px;
+}
+
+.imgs1 img:last-child {
+    width: 420px;
+    transform: translateY(-460px) translateX(38px);
+}
+
+.ring2, .ring3, .ring4 {
+    display: none;
+}
